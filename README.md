@@ -19,7 +19,9 @@ The [UCI SECOM dataset](https://archive.ics.uci.edu/dataset/179/secom) has **1,5
 ## Key findings
 - PCA kept 95% of the variance with only a small fraction of the original features.
 - K-Means (k=2) **could not** recover the pass/fail structure, so unsupervised methods alone aren't enough here.
-- **Decision Tree + SMOTE** gave the best precision/recall balance and meaningful recall on the failure class.
+- **Decision Tree + SMOTE** gave the best precision/recall balance. It caught **8 of 21 failing units, up from 1 of 21** without SMOTE.
+
+![Decision Tree confusion matrices before and after SMOTE](images/decision_tree_smote.png)
 
 ## Repository
 | Path | Contents |
